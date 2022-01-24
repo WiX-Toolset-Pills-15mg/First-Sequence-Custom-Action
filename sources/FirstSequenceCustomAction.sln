@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FirstSequenceCustomAction", "FirstSequenceCustomAction\FirstSequenceCustomAction.wixproj", "{CB0F6962-15CA-487E-874D-3B19C8673BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstSequenceCustomAction.CustomActions", "FirstSequenceCustomAction.CustomActions\FirstSequenceCustomAction.CustomActions.csproj", "{855F6935-795B-48D8-B164-64093B89E68E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB0F6962-15CA-487E-874D-3B19C8673BD5}.Debug|x86.ActiveCfg = Debug|x86
+		{CB0F6962-15CA-487E-874D-3B19C8673BD5}.Debug|x86.Build.0 = Debug|x86
+		{CB0F6962-15CA-487E-874D-3B19C8673BD5}.Release|x86.ActiveCfg = Release|x86
+		{CB0F6962-15CA-487E-874D-3B19C8673BD5}.Release|x86.Build.0 = Release|x86
+		{855F6935-795B-48D8-B164-64093B89E68E}.Debug|x86.ActiveCfg = Debug|x86
+		{855F6935-795B-48D8-B164-64093B89E68E}.Debug|x86.Build.0 = Debug|x86
+		{855F6935-795B-48D8-B164-64093B89E68E}.Release|x86.ActiveCfg = Release|x86
+		{855F6935-795B-48D8-B164-64093B89E68E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EE7BE0A-936B-44A7-BB5F-82728088ADC2}
+	EndGlobalSection
+EndGlobal

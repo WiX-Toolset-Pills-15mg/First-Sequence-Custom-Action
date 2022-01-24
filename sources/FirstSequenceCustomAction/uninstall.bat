@@ -1,0 +1,1 @@
+msiexec /x FirstSequenceCustomAction.msi /l*vx uninstall.log

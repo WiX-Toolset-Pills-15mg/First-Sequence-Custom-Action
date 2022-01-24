@@ -1,0 +1,10 @@
+WiX Toolset Pills - Client-Server Custom Action
+==============================================================================
+
+This file is part of the "Client-Server Custom Action" Pill.
+
+The pill demonstrates how to create a custom action that is executed once
+eather on client or on server depending which execution comes first.
+
+For more details please chech the GitHub repository:
+https://github.com/WiX-Toolset-Pills-15mg/Client-Server-Custom-Action
