@@ -4,7 +4,7 @@
 
 This pill demonstrates how to create a first-sequence custom action.
 
-An forst-sequence custom action is executed in the first sequence where it is encountered. Subsequent executions will be skipped.
+A first-sequence custom action is executed in the first sequence where it is encountered. Subsequent executions will be skipped.
 
 ## How to use
 
@@ -24,11 +24,12 @@ An forst-sequence custom action is executed in the first sequence where it is en
 
 ### d) Log file examples
 
-- TBD
+- [doc/logs](doc/logs)
+- Sometimes a quick look into the log files may be useful, but running the installer each time is cumbersome. I generated the log files for what I thought are the meaningful scenarios and I placed them into this directory. Have a look when needed.
 
 ## Suggestions
 
-TBD
+Any suggestion or opinion is appreciated. Please, feel free to add a [GitHub Issue](https://github.com/WiX-Toolset-Pills-15mg/First-Sequence-Custom-Action/issues/new?assignees=&labels=&template=feature_request.md&title=).
 
 ## Donations
 
