@@ -20,6 +20,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
+    <!--
+    ====================================================================================================
+    START: Overview
+    ====================================================================================================
+    
+    Let's take the example of a custom action that performs a validation. If the validation fails, the
+    installer must be stopped. Where should we place this custom action in the sequence of custom
+    actions? Further more, knowing that there are two sequences, "InstallUISequence" executed by the
+    client and "InstallExecuteSequence" executed by the server, in which sequence should we place it?
+    
+    Note: There are other sequences of custom actions, but only the client and the server ones are
+          important for this topic.
+    
+    You may think it is not necessary to run it twice. We can schedule it only on the client.
+    But the client execution can be skipped using the /quiet argument.
+    Then, the safest place is to schedule it in the server sequence.
+    
+    This is, indeed the safest approach, but Windows Installer offers an improved mechanism: We can
+    schedule the custom action in both sequences but and it will be actually executed only once, by the
+    first sequence that gets to it:
+        - When run normally, the client will execute the custom action and the server will skip it.
+        - When run in quiet mode, the client is not executed at all, but the server will take care to
+          run the custom action.
+    
+    Let's see how we implement this.
+    
+    NEXT: DummyValidationCustomAction.cs
+    
+    -->
+
     <Product
         Id="*"
         Name="First-Sequence Custom Action - WiX Toolset Pill"
@@ -44,6 +74,33 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <ComponentGroupRef Id="FileComponents" />
 
         </Feature>
+
+        <!--
+        ====================================================================================================
+        Step 6: Add the custom action to the execution sequences
+        ====================================================================================================
+        
+        The "InstallUISequence" is the sequence of custom actions executed by the client execution of the
+        installer.
+        The "InstallExecuteSequence" is the sequence of custom actions executed by the server execution of
+        the installer.
+        
+        A validation is better to be added in both sequences:
+        
+            - in the client application it is desirable to perform the validation and, in case it does not
+              pass, stop the installation early, without starting the server execution.
+              
+              Note: The client execution may be skipped completely by running the installer with the /quiet
+              argument.
+              
+            - in the server application it is mandatory to have the validation. We cannot relay on the
+              client execution.
+        
+        Be careful though, that, the client side sequence ("InstallUISequence") is not executed when the
+        installer is run in /quiet mode.
+        
+        NEXT: install.bat
+        -->
 
         <InstallUISequence>
             <Custom Action="DummyValidation" After="LaunchConditions" />

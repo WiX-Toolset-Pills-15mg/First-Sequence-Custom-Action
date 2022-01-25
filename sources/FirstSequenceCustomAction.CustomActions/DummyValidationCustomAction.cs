@@ -18,8 +18,34 @@ using Microsoft.Deployment.WindowsInstaller;
 
 namespace DustInTheWind.FirstSequenceCustomAction.CustomActions
 {
+    // ====================================================================================================
+    // Step 1: Create the custom actions project
+    // ====================================================================================================
+    // 
+    // A custom action project is a class library with additional instructions that creates the *.CA.dll
+    // file as a wrapper over the normal .NET dll assembly.
+    // This is necessary because Windows Installer is not able to consume .NET assemblies directly. This
+    // *.CA.dll acts as an adapter.
+    // 
+    // Note: Because of this, make sure to always create a project of type "C# Custom Action Project for
+    //       WiX v3" and not a normal class library project.
+    // 
+    // NEXT: DummyValidationCustomAction.cs
+
     public class DummyValidationCustomAction
     {
+        // ====================================================================================================
+        // Step 2: Implement the custom action
+        // ====================================================================================================
+        // 
+        // Create a public static method having the [CustomAction] attribute on it. It will be, later,
+        // referenced in the custom action tag from WiX.
+        // 
+        // The name of the custom action can be provider as parameter. In this case, it is "DummyValidation".
+        // If it is not provided explicitly, it will be the name of the function: "Execute".
+        // 
+        // NEXT: CustomActions.wxs
+
         [CustomAction("DummyValidation")]
         public static ActionResult Execute(Session session)
         {
