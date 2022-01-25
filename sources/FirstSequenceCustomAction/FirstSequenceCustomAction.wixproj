@@ -33,7 +33,7 @@
     <Content Include="dummy.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClientServerCustomAction.CustomActions\FirstSequenceCustomAction.CustomActions.csproj">
+    <ProjectReference Include="..\FirstSequenceCustomAction.CustomActions\FirstSequenceCustomAction.CustomActions.csproj">
       <Name>FirstSequenceCustomAction.CustomActions</Name>
       <Project>{855f6935-795b-48d8-b164-64093b89e68e}</Project>
       <Private>True</Private>
