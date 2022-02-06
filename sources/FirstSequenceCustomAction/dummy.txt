@@ -1,10 +1,10 @@
-WiX Toolset Pills - Client-Server Custom Action
-==============================================================================
+WiX Toolset Pills 15mg - First-Sequence Custom Action
+====================================================================================================
 
-This file is part of the "Client-Server Custom Action" Pill.
+This file is part of the "First-Sequence Custom Action" pill.
 
-The pill demonstrates how to create a custom action that is executed once
-eather on client or on server depending which execution comes first.
+The pill demonstrates how to create a custom action that is executed once eather on client or on
+server depending which execution comes first.
 
 For more details please chech the GitHub repository:
 https://github.com/WiX-Toolset-Pills-15mg/Client-Server-Custom-Action
