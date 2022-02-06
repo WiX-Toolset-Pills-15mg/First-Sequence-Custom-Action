@@ -32,7 +32,7 @@ A first-sequence custom action is executed in the first sequence where it is enc
 
 ## Discussions and Suggestions
 
-[GitHub Discussions](https://github.com/WiX-Toolset-Pills-15mg/My-First-Installer/discussions)
+[GitHub Discussions](https://github.com/WiX-Toolset-Pills-15mg/First-Sequence-Custom-Action/discussions)
 
 Fill free to use the discussions page whenever needed:
 
