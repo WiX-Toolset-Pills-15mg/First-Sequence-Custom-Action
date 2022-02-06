@@ -30,16 +30,6 @@ A first-sequence custom action is executed in the first sequence where it is enc
 - [doc/logs](doc/logs)
 - Sometimes a quick look into the log files may be useful, but running the installer each time is cumbersome. I generated the log files for the meaningful scenarios and I placed them into this directory. Have a look when needed.
 
-### e) Kata
-
-- [doc/kata/README.md](doc/kata/README.md)
-- I think that a good practice for someone that just starts to learn WiX Toolset is to exercise daily in order to get familiar with the concepts. This project can be used as a kata and this document contains instructions on how to perform it.
-
-- When this kata is mastered, there are other exercises that are worth looking at:
-  - [Immediate Custom Action](https://github.com/WiX-Toolset-Pills-15mg/Immediate-Custom-Action)
-  - [Deferred Custom Action](https://github.com/WiX-Toolset-Pills-15mg/Deferred-Custom-Action)
-  - [Bundle with MSI](https://github.com/WiX-Toolset-Pills-15mg/Bundle-with-MSI)
-
 ## Discussions and Suggestions
 
 [GitHub Discussions](https://github.com/WiX-Toolset-Pills-15mg/My-First-Installer/discussions)
